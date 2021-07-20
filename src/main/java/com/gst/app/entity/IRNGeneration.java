@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class IRNGeneration {
 
-    private Long ackNo;
+    private String ackNo;
     private String ackDt;
     private String irn;
     private String signedInvoice;
     private String signedQRCode;
     private String status;
-    private Long ewbNo;
+    private String ewbNo;
     private String ewbDt;
     private String ewbValidTill;
 
     public  IRNGeneration() {}
 
-    public  IRNGeneration(Long ackNo, String ackDt, String irn, String signedInvoice, String signedQRCode, String status, Long ewbNo, String ewbDt, String ewbValidTill) {
+    public  IRNGeneration(String ackNo, String ackDt, String irn, String signedInvoice, String signedQRCode, String status, String ewbNo, String ewbDt, String ewbValidTill) {
 
         this.ackNo = ackNo;
         this.ackDt = ackDt;
@@ -30,11 +30,11 @@ public class IRNGeneration {
 
     }
 
-    public Long getAckNo() {
+    public String getAckNo() {
         return ackNo;
     }
 
-    public void setAckNo(Long ackNo) {
+    public void setAckNo(String ackNo) {
         this.ackNo = ackNo;
     }
 
@@ -78,11 +78,11 @@ public class IRNGeneration {
         this.status = status;
     }
 
-    public Long getEwbNo() {
+    public String getEwbNo() {
         return ewbNo;
     }
 
-    public void setEwbNo(Long ewbNo) {
+    public void setEwbNo(String ewbNo) {
         this.ewbNo = ewbNo;
     }
 
